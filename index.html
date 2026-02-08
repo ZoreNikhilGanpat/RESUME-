@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Zore - Resume</title>
+    <style>
+        /* Basic reset to make it look clean */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        /* A simple header with a download button */
+        .header {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            background-color: #007bff;
+            padding: 6px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        /* The container for the PDF */
+        .pdf-container {
+            height: calc(100% - 50px);
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span>Nikhil Zore - CV</span>
+        <a href="resume.pdf" download>Download PDF</a>
+    </div>
+
+    <div class="pdf-container">
+        <iframe src="resume.pdf"></iframe>
+    </div>
+
+</body>
+</html>
